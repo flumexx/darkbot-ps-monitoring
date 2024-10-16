@@ -14,13 +14,13 @@
 
 ## 2. NSSM herunterladen und installieren:
 - Lade NSSM von der offiziellen Seite: https://nssm.cc/download.
-- Entpacke NSSM nach `C:\nssm`.
+- Entpacke NSSM nach `C:\nssm\`.
 
 ## 3. Dienst mit NSSM einrichten:
 - Öffne eine CMD als Administrator.
 - Führe den Befehl aus:
   ```bash
-  C:\nssm\nssm.exe install ProcessMonitorService "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -File "C:\MonitorControl\Monitor.ps1"
+  C:\nssm\win64\nssm.exe install ProcessMonitorService "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -File "C:\MonitorControl\Monitor.ps1"
   ```
 
 ## 4. Dienst starten:
